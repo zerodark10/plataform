@@ -2,7 +2,7 @@ import { Pool } from 'pg';
 
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL || process.env.POSTGRES_URI,
-  ssl: process.env.DATABASE_URL ? { rejectUnauthorized: false } : false
+  ssl: true,
 });
 
 // Función para insertar usuarios iniciales
