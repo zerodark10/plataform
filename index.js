@@ -8,7 +8,7 @@ const app = express();
 
 const allowedOrigins = [
   'https://tu-frontend-en-render.com', // Si luego despliegas el front
-  'http://localhost:3000', // Para desarrollo local
+  'http://localhost:5173', // Para desarrollo local
 ];
 
 app.use(cors({
